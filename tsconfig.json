@@ -1,0 +1,13 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "verbatimModuleSyntax": true,
+    "jsx": "react-jsx",
+    "baseUrl": "C:/Users/stuser00304/program/astro/first-project",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"]
+    },
+    "jsxImportSource": "react"
+  }
+}
