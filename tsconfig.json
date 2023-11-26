@@ -3,7 +3,7 @@
   "compilerOptions": {
     "verbatimModuleSyntax": true,
     "jsx": "react-jsx",
-    "baseUrl": "C:/Users/stuser00304/program/astro/first-project",
+    "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"]
