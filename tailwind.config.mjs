@@ -4,7 +4,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        vina: ["Vina Sans"],
+        dm: ["DM Serif Display", "sans-serif"],
+        kiwi: ["Kiwi Maru", "sans-serif"],
+      },
+      colors: {
+        main: "#333333",
       },
     },
   },

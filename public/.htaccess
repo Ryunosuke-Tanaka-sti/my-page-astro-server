@@ -1,0 +1,3 @@
+DirectoryIndex index.html
+
+ErrorDocument 404 custom_404/index.html

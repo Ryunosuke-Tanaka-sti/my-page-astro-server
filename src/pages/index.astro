@@ -1,7 +1,14 @@
 ---
+import Footer from "@components/Footer.astro";
+import { Header } from "@components/Header";
 import Layout from "@layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main class="flex flex-col"></main>
+<Layout title="龍ちゃんズHome">
+  <Header />
+  <main
+    class="w-full flex flex-col items-center px-2 md:px-[60px] gap-2 md:gap-[35px] grow py-4 md:py-16 max-w-7xl"
+  >
+  </main>
+  <Footer />
 </Layout>

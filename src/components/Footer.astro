@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+import logo from "../images/logo.png";
+---
+
+<!doctype html>
+<footer class="flex flex-row justify-center items-center text-2xl my-6">
+  <Image
+    class={"h-24 w-24 object-contain"}
+    src={logo}
+    alt="巣の中の卵を温めている鳥。"
+  />
+  <div class="font-kiwi text-main align-bottom">
+    龍ちゃんズ
+    <span class="font-dm text-4xl">Home</span>
+  </div>
+</footer>
