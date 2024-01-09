@@ -1,4 +1,5 @@
 ---
+import { CardBox } from "@components/CardBox";
 import Footer from "@components/Footer.astro";
 import { Header } from "@components/Header";
 import Layout from "@layouts/Layout.astro";
@@ -7,8 +8,26 @@ import Layout from "@layouts/Layout.astro";
 <Layout title="龍ちゃんズHome">
   <Header />
   <main
-    class="w-full flex flex-col items-center px-2 md:px-[60px] gap-2 md:gap-[35px] grow py-4 md:py-16 max-w-7xl"
+    class="flex w-full max-w-7xl grow flex-col items-center gap-2 px-2 py-4 md:gap-[35px] md:px-[60px] md:py-16"
   >
+    <CardBox
+      description="説明文"
+      image="https://placehold.jp/24/cc9999/993333/150x100.png"
+      title="title"
+      url="https://www.google.co.jp/"
+    />
+    <CardBox
+      description="説明文"
+      image="https://placehold.jp/24/cc9999/993333/150x100.png"
+      title="title"
+      url="https://www.google.co.jp/"
+    />
+    <CardBox
+      description="説明文"
+      image="https://placehold.jp/24/cc9999/993333/150x100.png"
+      title="title"
+      url="https://www.google.co.jp/"
+    />
   </main>
   <Footer />
 </Layout>

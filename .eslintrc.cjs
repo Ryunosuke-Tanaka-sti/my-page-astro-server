@@ -1,19 +1,26 @@
+/** @type {import('eslint').ESLint.ConfigData} */
 module.exports = {
+  root: true,
   extends: [
-    "plugin:astro/recommended",
-    "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
-    "react-app",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:astro/recommended",
     "prettier",
   ],
   env: {
     browser: true,
     node: true,
   },
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
   },
+  plugins: ["@typescript-eslint"],
+  rules: {
+    "no-undef": "off",
+  },
+  ignorePatterns: ["node_modules", "dist"],
   overrides: [
     {
       // Define the configuration for `.astro` file.
@@ -31,6 +38,5 @@ module.exports = {
         // "astro/no-set-html-directive": "error"
       },
     },
-    // ...
   ],
 };
